@@ -1,6 +1,18 @@
 <!DOCTYPE html>
-<html>
-    <head><title>SoundCloud Downloader</title>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>SCdown - Opensource Soundcloud Downloader</title>
+	<meta name="description" content="An opensource, ad-free Soundcloud downloader build using Flask and repl.it"/>
+	<meta name="referrer" content="origin"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<link rel="shortcut icon" href="" type="image/x-icon"/>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link href="https://minimalsearch.com/public/style.css" type="text/css" rel="stylesheet"/>
+	<link href="https://minimalsearch.com/public/white.css" type="text/css" rel="stylesheet" id="switch-style"/>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/milligram.min.css') }}">
         <script type="text/javascript">
             function load()
             {   
@@ -11,13 +23,39 @@
             }
         
         </script>
-    </head>
-    <body onload="load()">
-        <center><h3>Free SoundCloud Downloader</h3></center>
-        <form method="POST">
-            <span>Enter song url:</span><input type="text" name="url" placeholder="soundcloud track url goes here">
-            <input type="submit" name="submit" value="Download" required="required">
-            <a href="{{link}}" hidden="hidden" id="he">link</a>
-        </form>
-    </body>
+</head>
+<body onload="load()"  class="body-index">
+	<div class="page-wrap">
+<div class="wrap-index-form">
+        <h2><center>SCdownloader</center></h2>
+        <br>
+	<form method="POST" class="form-index-search">
+		<input type="search" name="url" class="input-search" autocomplete="off" autofocus size="80" maxlength="512"/>
+        <input type="submit" value="Search" class="input-submit"/>
+        <a href="{{link}}" hidden="hidden" id="he" target="_blank">link</a>
+	</form>
+		<div class="request-suggest">
+		<div class="hovered-cursor">
+			<div class="text-suggest">
+                <br>
+				<h1><a href="/about"><span>An Opensource Soundcloud Downloader</span></a></h1>
+				<span class="close-suggest"><a href="#">×</a></span>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</div>
+<div class="page-footer">
+	<div class="footer-wrap">
+		<div class="footer-text-suggest request-suggest">
+			<div class="text-suggest">
+				<h1 class="landscape-text"><p>Designed with ♥ by<a href="http://gauthamp10.github.io" title="Gautham Prakash" target="_blank"> Gautham Prakash</a>. Licensed under the<a href="https://github.com/gauthamp10/scdown#license" title="MIT License" target="_blank"> MIT License</a>.</p></h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+</body>
 </html>
