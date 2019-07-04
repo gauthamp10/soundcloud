@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head><title>SoundCloud Downloader</title>
+        <script type="text/javascript">
+            function load()
+            {   
+                var data = '{{ link }}';
+                if(data!='#'){
+                    document.getElementById("he").click();
+                }
+            }
+        
+        </script>
+    </head>
+    <body onload="load()">
+        <center><h3>Free SoundCloud Downloader</h3></center>
+        <form method="POST">
+            <span>Enter song url:</span><input type="text" name="url" placeholder="soundcloud track url goes here">
+            <input type="submit" name="submit" value="Download" required="required">
+            <a href="{{link}}" hidden="hidden" id="he">link</a>
+        </form>
+    </body>
+</html>
