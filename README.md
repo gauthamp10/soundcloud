@@ -2,7 +2,7 @@
 An opensource soundcloud downloader built using flask and repl.it
 
 
-See in action @: [https://scdown--gauthamprakash.repl.co](https://scdown--gauthamprakash.repl.co)
+See in action @: [https://scdownloader.gauthamprakash.repl.co/](https://scdownloader.gauthamprakash.repl.co/)
 
 
 ### Author
